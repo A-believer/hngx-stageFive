@@ -6,7 +6,7 @@ import Homepage from "./pages/Homepage";
 export default function App() {
   return (
     <Routes>
-      <Route path="/popup" element={<Popup/>} />
+      <Route index path="/popup" element={<Popup/>} />
       <Route path="/home" element={<Homepage/>} />
     </Routes>
   )
