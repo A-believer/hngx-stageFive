@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom";
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import HowItWorks from "../components/HowItWorks";
 
 
 export default function Homepage() {
   return (
-    <section className="w-[400px] h-[400px] flex justify-center items-center flex-col">
-      <p>Welcome to HomePage</p>
-      <Link to={`/`}>Back to Popup</Link></section>
+    <section className="w-full bg-[#F4F6F8] pt-[2px] space-y-14">
+      <Hero />
+      <Features />
+      <HowItWorks/>
+    </section>
   )
 }

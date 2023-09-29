@@ -10,7 +10,7 @@ import Signup from "./pages/Signup.jsx";
 
 export default function App() {
   return (
-    <main>
+    <main className="relative">
       <Navbar/>
       <Routes>
       <Route path="/" element={<Homepage/>} />

@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="flex gap-x-[243px] justify-between whitespace-nowrap px-[130px] py-[98px] bg-primary-500 text-primary-50 items-center">
+    <footer className="w-full flex gap-x-[243px] justify-between whitespace-nowrap px-[130px] py-[98px] bg-primary-500 text-primary-50 items-center">
       <div className="self-start flex gap-x-2 items-center font-inter font-bold">
         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
   <g clipPath="url(#clip0_607_4328)">
