@@ -14,7 +14,7 @@ export default function App() {
       <Navbar/>
       <Routes>
       <Route path="/" element={<Homepage/>} />
-      <Route path="/videorecorded" element={<VideoRecorded/>} />
+      <Route path="/videoId" element={<VideoRecorded/>} />
       <Route path="/profile" element={<Profile/>} />
       <Route path="/profilevideodetails" element={<ProfileVideoDetails/>} />
       <Route path="/signup" element={<Signup/>} />

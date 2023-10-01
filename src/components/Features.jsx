@@ -3,7 +3,7 @@ import featuresImage from "../assets/featuresImage.png"
 
 export default function Features() {
   return (
-    <div className="px-[100px] py-20 bg-[#fff] space-y-16">
+    <div id="features" className="px-[100px] py-20 bg-[#fff] space-y-16">
       <div className="w-full text-center">
         <h1 className="font-sora text-[#141414] text-[40px] font-bold mb-2">Features</h1>
         <p className="mt-2 font-workSans text-xl text-[#616163] leading-8">Key Highlights of Our Extension</p>

@@ -2,7 +2,7 @@ import img from "../assets/howitworksimg.png"
 
 export default function HowItWorks() {
   return (
-    <div className="space-y-[60px] text-center bg-[#fff] p-[100px] ">
+    <div id="howItWroks" className="space-y-[60px] text-center bg-[#fff] p-[100px] ">
       
       <h1 className="text-[40px] font-bold font-sora">How it works</h1>
 
