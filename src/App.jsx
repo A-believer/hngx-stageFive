@@ -13,10 +13,10 @@ export default function App() {
     <main className="relative">
       <Navbar/>
       <Routes>
-      <Route path="/" element={<Homepage/>} />
+      <Route index path="/" element={<Homepage/>} />
       <Route path="/videoId" element={<VideoRecorded/>} />
       <Route path="/profile" element={<Profile/>} />
-      <Route path="/profilevideodetails" element={<ProfileVideoDetails/>} />
+      <Route path="/profilevideoId" element={<ProfileVideoDetails/>} />
       <Route path="/signup" element={<Signup/>} />
       </Routes>
       <Footer/>
