@@ -10,7 +10,7 @@ import Signup from "./pages/Signup.jsx";
 
 export default function App() {
   const location = useLocation()
-  const displayNavFooter = location.pathname === "/signup"
+  const displayNavFooter = location.pathname === "/signup" || location.pathname === "/profile" || location.pathname === "/profilevideoId"
 
   return (
     <main className="relative">
