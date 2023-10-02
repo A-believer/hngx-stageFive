@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx"
 import Footer from "./components/Footer.jsx"
 import Homepage from "./pages/Homepage";
@@ -9,9 +9,12 @@ import Signup from "./pages/Signup.jsx";
 
 
 export default function App() {
+  const location = useLocation()
+  const displayNavFooter = location.pathname === "/signup"
+
   return (
     <main className="relative">
-      <Navbar/>
+      {!displayNavFooter && <Navbar/>}
       <Routes>
       <Route index path="/" element={<Homepage/>} />
       <Route path="/videoId" element={<VideoRecorded/>} />
@@ -19,7 +22,7 @@ export default function App() {
       <Route path="/profilevideoId" element={<ProfileVideoDetails/>} />
       <Route path="/signup" element={<Signup/>} />
       </Routes>
-      <Footer/>
+      {!displayNavFooter && <Footer/>}
     </main>
   )
 }
