@@ -5,6 +5,7 @@ import copy from "../assets/copy.svg"
 import telegram from "../assets/telegram.svg"
 import facebook from "../assets/facebook.svg"
 import whatsapp from "../assets/whatsapp.svg"
+import videoImage from "../assets/videoImg.png"
 import { Link } from "react-router-dom"
 
 export default function VideoRecorded() {
@@ -33,7 +34,7 @@ export default function VideoRecorded() {
           <label htmlFor="email" className="font-normal text-lg font-workSans bg-primary-300/20 py-3 px-6 flex justify-between items-center rounded-2xl">
             <input
               value={email}
-              onChange={(e) => e.target.value}
+              onChange={(e) => setEmail(e.target.value)}
               className="bg-[transparent] w-full border-0 outline-none"
               type="email"
               name="email"
@@ -81,7 +82,8 @@ export default function VideoRecorded() {
 
         <div className="pl-10 border-l border-[#939393] w-full flex flex-col gap-y-[80px]">
           <div
-            className="w-full border rounded-lg h-[473px] border-primary-400">
+            className="w-full border rounded-lg h-full">
+            <img src={videoImage} alt="image" />
           </div>
 
           <div>
@@ -92,22 +94,7 @@ export default function VideoRecorded() {
 
             <div
               className="overflow-y-auto w-full h-[256px] mt-10 flex flex-col gap-y-4">
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
-              <p><span>time</span><span>text</span></p>
+              Transciption goes here
             </div>
           </div>
         </div>
